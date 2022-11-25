@@ -1,0 +1,27 @@
+{
+  "name": "myRollup",
+  "version": "1.0.0",
+  "description": "极客时间前端进阶特训营-制造Rollup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lujiajian1/geek-Rollup.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lujiajian1/geek-Rollup/issues"
+  },
+  "homepage": "https://github.com/lujiajian1/geek-Rollup#readme",
+  "dependencies": {
+    "acorn": "^8.8.1",
+    "magic-string": "^0.26.7"
+  },
+  "devDependencies": {
+    "jest": "^29.3.1"
+  }
+}
