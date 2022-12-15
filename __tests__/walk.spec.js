@@ -11,12 +11,12 @@ describe("AST Walk函数", () => {
       enter: mockEnter,
       leave: mockLeave,
     });
-    let calls = mockEnter.mock.calls;
 
+    let calls = mockEnter.mock.calls;
     expect(calls.length).toBe(1);
     expect(calls[0][0]).toEqual({ a: "1" });
-    calls = mockLeave.mock.calls;
 
+    calls = mockLeave.mock.calls;
     expect(calls.length).toBe(1);
     expect(calls[0][0]).toEqual({ a: "1" });
   });
