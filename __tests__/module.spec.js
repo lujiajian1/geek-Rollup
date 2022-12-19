@@ -54,4 +54,17 @@ describe("Test Module", () => {
       expect(module.definitions).toEqual({ a: module.ast.body[0] });
     });
   });
+
+  describe("ExpandAllStatement", () => {
+    test("基础", () => {
+      const code = `const a = () => 1;
+                    const b = () => 2;
+                    a();`;
+      const module = new Module({ code });
+      const statements = module.expandAllStatement();
+      expect(statements.length).toBe(2);
+      expect(module.code.snip(statements[0].start, statements[0].end).toString()).toEqual('const a = () => 1;');
+      expect(module.code.snip(statements[1].start, statements[1].end).toString()).toEqual('a();');
+    });
+  });
 });
